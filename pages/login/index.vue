@@ -28,7 +28,7 @@
             </div>
 
             <div class="text-sm/6">
-              <a href="#" class="font-semibold text-indigo-600 hover:text-indigo-500">Forgot password?</a>
+              <NuxtLink to="/login/forgot-password" class="font-semibold text-indigo-600 hover:text-indigo-500">Forgot password?</NuxtLink>
             </div>
           </div>
 
@@ -56,7 +56,7 @@
       <p class="mt-10 text-center text-sm/6 text-gray-500">
         Not a member?
         {{ ' ' }}
-        <NuxtLink to="/signup" class="font-semibold text-indigo-600 hover:text-indigo-500">Sign Up</NuxtLink>
+        <NuxtLink to="/login/signup" class="font-semibold text-indigo-600 hover:text-indigo-500">Sign Up</NuxtLink>
       </p>
     </div>
     <Toast />
