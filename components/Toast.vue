@@ -33,6 +33,7 @@
                 <Icon
                   name="material-symbols:cancel-outline"
                   class="bg-transparent w-6 h-6 cursor-pointer text-white"
+                  mode="svg"
                   @click="useErrorHandler.closeToast(toast.key)"
                 />
               </div>
