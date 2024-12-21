@@ -105,7 +105,7 @@ const handleLogin = async (formdata: any) => {
     }
 
     // Successful login
-    router.push('/dashboard') // or wherever you want to redirect after login
+    router.push('/') // or wherever you want to redirect after login
   } catch (e) {
     // Handle different error codes
     console.log(JSON.stringify(e))

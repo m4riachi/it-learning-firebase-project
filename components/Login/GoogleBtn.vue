@@ -37,7 +37,7 @@ const handleGoogleSignIn = async () => {
     // const credential = GoogleAuthProvider.credentialFromResult(result)
     // const token = credential?.accessToken
 
-    router.push('/dashboard')
+    router.push('/')
   } catch (e) {
     switch (e.code) {
       case 'auth/popup-closed-by-user':
