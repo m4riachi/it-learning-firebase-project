@@ -8,7 +8,7 @@
         </a>
       </div>
       <div class="hidden lg:flex lg:gap-x-12">
-        <a v-for="item in navigation" :key="item.name" :href="item.href" class="text-sm/6 font-semibold text-gray-900">{{ item.name }}</a>
+        <nuxt-link v-for="item in navigation" :key="item.name" :to="item.href" class="text-sm/6 font-semibold text-gray-900">{{ item.name }}</nuxt-link>
       </div>
       <div class="flex flex-1 items-center justify-end gap-x-6">
         <nuxt-link to="/profile" class="hidden text-sm/6 font-semibold text-gray-900 lg:block">Profile</nuxt-link>
@@ -22,10 +22,7 @@
 import { ref } from 'vue'
 
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
+  { name: 'Chat', href: '/chat' },
 ]
 
 const router = useRouter()
