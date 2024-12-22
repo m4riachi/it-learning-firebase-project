@@ -14,12 +14,15 @@ export default defineNuxtConfig({
       messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
       measurementId: process.env.FIREBASE_MEASUREMENT_ID,
     },
+    emulators: {
+      enabled: process.env.NODE_ENV === 'development',
+    },
     auth: {
       enabled: true
     },
-    formkit: {
-      // Support expérimental pour le chargement automatique (voir note) :
-      autoImport: true
-    },
+  },
+  formkit: {
+    // Support expérimental pour le chargement automatique (voir note) :
+    autoImport: true
   },
 })
